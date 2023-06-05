@@ -41,31 +41,56 @@
 		<div class="bd-grid" style="margin-top:100px;">
 		<h2 class="">Integrated Feature Extractor Transfer Learning for Wireless Network Security</h2>
 		<h6 class="">May 30, 2023</h6>
-		<p class = "">
+		<p class = ""> <!--class="bodyFont"-->
 			This is an interactive article for my paper “Intelligent Anti-jamming based on Deep Reinforcement Learning and Transfer Learning”.
 		</P>
 		<p class = "">
 			First, let us see how a jammer disrupts user signals in a wireless network.
 			<br>
-			<img src="assets/img/project1/systemModel.png" alt="Wireless Network with a Jamming Attacker" width=50% style="margin:auto auto auto auto;">
+			<img src="assets/img/project1/systemModel.png" alt="Wireless Network with a Jamming Attacker" width=75% style="margin:auto auto auto auto;">
 			In this example, the jammer disrupts the Access Points (APs) in each regional network.
 			This way, users sending signals to the access point in each region will collide with the jammer signal.
 			Usually, the jammer has higher signal power, hence the signal at the receiver (AP) becomes disrupted.
 			This way, the jammer can lower the efficiency and throughput of the communication system.
 		</p>
-		<p class="">
-		To confront such a problem, we can equip each access point in each region with a machine learning (reinforcement learning) based agent.
-		The agent can predict the jammer actions and this way, avoid collisions with its signals.
+		<p>
+			To confront such a problem, we can equip each access point in each region with a machine learning (reinforcement learning) based agent.
+			The agent can predict the jammer actions and this way, avoid collisions with its signals.
+			So first, we train a deep reinforcement learning model (DRL) that can predict the jammer behaviour and maximize the throughput of the wireless network in a specific region called "source domain".
+			We consider a certain scenario for the source domain and call it "Source". The scenario we used is a <a href="presentation.html#survey_jammer">sweep jammer</a>.
+			For a deep reinforcement learning mechanizm and how it works, kindly refer to my other project, <a href="projectDRL.html">deep reinforcement learning for atari games</a>.
+			The deep neural network (DNN) architecture used for the DRL model is as follows:
+			<img src="assets/img/project1/DNN.png" width=75% alt="Deep Neural Network Architecture" style="margin:auto auto auto auto;">
+			I use "double Q-iteration" DRL algorithm since it avoids "sub-game perfection".
+			The hyperparameters used to tune the DNN for the double Q-iteration algorithm are as follows:
+			<img src="assets/img/project1/params.png" width=75% alt="Simulation Hyperparameters" style="margin:auto auto auto auto;">
 		</p>
+		<p>
+			As shown, I propose using recurrent neural networks (RNNs) instead of convolutional neural networks (CNNs). Because the wireless network information are all based on time.
+			As a result, the dataset is time series. RNNs are known to perform great when the input space (state space in DRL jargon) is time series.
+			And for the RNN architecture I recommend using one long short-term memory (LSTM) layer as the first hidden layer.
+			I made a comparison between RNN and CNN networks and the results are impressive.
+			<img src="assets/img/project1/RL.png" width=75% alt="RNN vs. CNN" style="margin:auto auto auto auto;">
+			As shown, the RNN is working 15% better than CNN even though the number of parameters used for the RNN network is less than CNN.
+			<img src="assets/img/project1/noParams.png" width=75% alt="Number of Parameters" style="margin:auto auto auto auto;">
+		</p>
+		<p>
+			Now as you can see, both models take a considerable amount of time to be trained. This is not application in applications as fast as wireless network communication systems.
+			So the proposed method in my paper and similar works is to use a ML method named "Transfer Learning (TL)".
+			As the name suggests, in transfer learning, we transfer the learned knowledge which usually is in form of a DNN and its weights,
+			to a new environment facing the almost the same problem.
+		</p>
+		<br><br>
 		</div>
 
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Siavash Barqi Janiar</p>
             <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+				<ul>
+                <li>(647) 897 1497</li>
+				<li>siavashbarqi@gmail.com</li>
+				</ul>
             </div>
             <p class="footer__copy">Copyright &#169; Siavash Barqi Janiar, 2023</p>
         </footer>
