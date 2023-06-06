@@ -150,6 +150,29 @@ img {
 	margin-top: 0;
 }
 
+.cv_section{
+	max-width:800px;
+	margin: 2% auto 3% auto;
+	padding:15px;
+	border:1px solid #dcd9d9;
+	text-align:left;
+	box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+}
+.cv_section span{color:#74808a;float:right}
+.cv_section h3{font-weight:500;float:left;margin:0;color:#374054}
+.cv_section h4{color:#74808a;clear:both;font-weight:500;margin:0 0 15px 0}
+.cv_section p,.education-block ul{margin:0;color:#74808a;font-size:0.9em}
+.cv_section ul{padding:0 0 0 15px}
+
+.body_container{
+	max-width: 800px;
+	text-align: left;
+	margin: 100px auto 50px auto;
+    //display: grid;
+  //margin-left: var(--mb-2);
+  //margin-right: var(--mb-2);
+}
+
 /*===== NAV =====*/
 .nav {
   height: var(--header-height);
@@ -214,7 +237,7 @@ img {
 .nav__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
-  margin-right: 20px;
+  //margin-right: 5px;
   font-size: 2rem;
   color: var(--second-color);
 }

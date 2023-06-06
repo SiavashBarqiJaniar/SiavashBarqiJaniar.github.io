@@ -13,19 +13,23 @@
     </head>
     <body>
         <!--===== HEADER =====-->
+        <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div class="nav__social">
                     <a class="nav__social-icon" href="https://www.linkedin.com/in/siavashbarqijaniar/"><i class="bx bxl-linkedin"></i></a>
                     <a class="nav__social-icon" href="https://github.com/SiavashBarqiJaniar"><i class="bx bxl-github"></i></a>
+                    <a class="nav__social-icon" href="mailto:siavashbarqi@gmail.com"><i class="bx bx-envelope"></i></a>
                     <a class="nav__social-icon" href="https://scholar.google.com/citations?user=KQ82xw4AAAAJ&hl=en"><i class="bx bxl-google"></i></a>
-                    <a href="Siavash_Barqi_Janiar_resume.pdf" class="button">Resume</a>
+					<a class="nav__social-icon" href="Siavash_B_Janiar_resume.pdf"><i class='bx bx-file'></i></a>
+                    <!--a class="navButton" href="Siavash_Barqi_Janiar_resume.pdf">Resume</a-->
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link active">About</a></li>
-                        <li class="nav__item"><a href="index.html#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="index.html#home" class="nav__link active">About</a></li>
+                        <li class="nav__item"><a href="cv.html" class="nav__link">curriculum vitae</a></li>
+                        <li class="nav__item"><a href="books.html" class="nav__link">Books</a></li>
                         <li class="nav__item"><a href="index.html#work" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
@@ -40,12 +44,20 @@
 		
 		<!--===== EDUCATION =====-->
 		<div class="body_container">
-			<h1>curriculum vitae</h1>
-			<span style="margin:0;font-size:50pt;float:right;"><a href="Siavash_Barqi_Janiar_resume.pdf"><i class='bx bxs-file-pdf' ></i></a></span>
+			<div style="margin:5% auto 50px auto;padding:0 0 5% 0;">
+				<h1 style="float:left;">curriculum vitae</h1>
+				<span style="font-size:50pt;float:right;margin-bottom:10rem;"><a href="Siavash_B_Janiar_resume.pdf"><i class='bx bxs-file-pdf' ></i></a></span>
+			</div>
+			
 			<div class="cv_section">
 				<h1>Summary</h1>
-				<p>I am a machine learning engineer looking for a job...</p>
+				<p>I am a machine learning engineer newly graduated and looking for a job.
+				I have a strong statistics and programming background interested in machine learning,
+				software, and wireless network engineering roles. I have had an active academic
+				background publishing 5 papers within 3 years of my study. As a result of that, I
+				have received several awards and scholarships from the universities.</p>
 			</div>
+			
 			<div class="cv_section">
 				<h2>Education</h2>
 				<h3>York University</h3>
@@ -53,7 +65,7 @@
 				<h4>Master of Applied Science in Electrical Engineering and Computer Science</h4>
 				<ul style="list-style-type:circle">
 					<li>Finished in 5 semesters (1.6 years)</li>
-					<li>Superviser: <a href="#">Ping Wang</a>.
+					<li>Supervisor: <a href="#">Ping Wang</a>.
 					<li>Number of Publications: 4.
 					<li>Research: transfer learning, unsupervised learning, federated learning, deep-reinforcement learning.</li>
 					<li>GPA: A+ </li>
@@ -63,24 +75,121 @@
 				<span class="education-date">Sept 2016 - June 2021</span>
 				<h4>Bachelor of Science in Electrical Engineering</h4>
 				<ul style="list-style-type:circle">
-					<li>Superviser: <a href="#">Ping Wang</a>.
+					<li>Project Supervisor: <a href="#">Vahid Pourahmadi</a>.
 					<li>Publications: 1 journals, 1 conference paper, 1 thesis.
 					<li>Focus: statistical learning, deep learning, supervised learning, partially observable MDP.</li>
-					<li>GPA: A+ </li>
+					<li>GPA: 8.4 / 10</li>
+				</ul>
+			</div>
+			
+			<div class="cv_section">
+				<h2>Experience</h2>
+				<ul style="list-style-type:disc">
+				<h3>York University</h3>
+				<span class="education-date">September 2021 – April 2023</span>
+				<h4>Graduate Assistant, Research Assistant, Teaching Assistant</h4>
+				<ul style="list-style-type:circle">
+					<li>Proposed an explainable artificial intelligence (XAI)
+					based method combined with integrated feature extractor
+					to estimate jamming patterns in a wireless network.
+					Reduced the time complexity of the models by x30.</li>
+					<li>Realized an XAI method using random forest,
+					K-means clustering, pattern recognition,
+					rule learning, decision	trees, and RIPPER methods for
+					RL models utilized for anti-jamming and made the process
+					transparent for the users without engineering knowledge.</li>
+					<li>introduced a neural network architecture achieving 13%
+					higher throughput than convolutional neural networks.</li>
+				</ul>
+				<br>
+				<h3>Digikala.com</h3>
+				<span class="education-date">June 2019 – January 2021</span>
+				<h4>Machine Learning Developer</h4>
+				<ul style="list-style-type:circle">
+					<li>Frameworks used in the job include AmazonWeb Services (AWS)
+					and Natural Language Processing (NLP).</li>
+					<li>Increased the number of purchases with more than one item from
+					0.2 million a month to more than 1.5 million using the proposed
+					algorithm, published as an essay in the company.</li>
+					<li>Hired by the company after three months due to showing a high
+					performance during the internship program.</li>
+				</ul>
+				<br>
+				<h3>The Ministry of Information and Communications Technology (ICT)</h3>
+				<span class="education-date">May 2017 – April 2018 (12 months)</span>
+				<h4>Machine Learning Developer - Wireless Network Administrator (Internship)</h4>
+				<ul style="list-style-type:circle">
+					<li>Realizing WiFi-LTE coexistence in 5GHz unlicensed band using double
+					Q-iteration algorithm decreasing the amount of collisions in the cognitive
+					radio network by roughly 24% compared to the legacy protocols.</li>
+					<li>Utilized ML for distributed dynamic spectrum access increasing the
+					throughput of the network by nearly 60% compared to slotted ALOHA MAC protocol.</li>
+					<li>Utilized online actor-criticMLalgorithmfor access problems in
+					heterogeneous wireless networks using achieving 95% throughput in the
+					network marked as the highest possible performance.</li>
+					<li>Optimized the resource allocation system in distributed computer
+					networks with prioritized packets using ML/AI, which increased the
+					throughput of the wireless system by 15% compared to the previous works’
+					algorithms.</li>
+				</ul>
+			</div>
+			
+			<div class="cv_section">
+				<h2>Hard Skills</h2>
+				<ul style="list-style-type:circle">
+					<li><h3>Programming Languages</h3><br>
+						<ul style="list-style-type:disc;margin-left:35px;padding:15px;">
+							<li>Python, Go, SQL, C/C++, C#, R, MATLAB, Java, JavaScript, CSS, HTML, PHP, VHDL, Verilog, Linux, Git, LaTeX</li>
+						</ul>
+					</li>
+					<li><h3>Tools and Libraries</h3><br>
+						<ul style="list-style-type:disc;margin-left:35px;padding:15px;">
+							<li>Tensorflow, Keras, PyTorch, Sci-kit Learn, Pandas, OpenCV, Qt Design, Socket Programming, Thread Programming, Aircrackng</li>
+						</ul>
+					</li>
+					<li><h3>ML / AI Tools</h3><br>
+						<ul style="list-style-type:disc;margin-left:35px;padding:15px;">
+							<li>AWS, ETLs, ECS, Deep Reinforcement Learning, Supervised Learning, Unsupervised Learning, Statistical Learning, Rule Learning,
+							Data Analysis, Random Forests, Bootstrap, Decision Trees, K-means Clustering</li>
+						</ul>
+					</li>
+					<li><h3>Softwares</h3><br>
+						<ul style="list-style-type:disc;margin-left:35px;padding:15px;">
+							<li>ADS, R Studio, Vivado, Simulinks, Microsoft Word, Microsoft Excel, Microsoft Powerpoint</li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 			
 			<div class="cv_section">
 				<h2>Publications</h2>
 				<ul style="list-style-type:disc">
-					<li>[J1] </li>
-					<li>[J2] </li>
-					<li>[J3] </li>
-					<li>[C1] </li>
-					<li>[C2] </li>
-					<li>[T1] </li>
-					<li>[T2] </li>
-					<li>[Essay1] </li>
+					<li>[J1] In progress (Accepted): Intelligent Anti-jamming based on Deep Reinforcement Learning and Transfer Learning, IEEE
+						Transactions on Vehicular Technology, 2023.</li>
+					<li>[C1] In progress (Accepted): A transfer learning approach based on integrated feature extractor for anti-jamming in wireless
+						networks, MetaComm, 2023.</li>
+					<li>[J2] In progress (Accepted): Explainable Reinforcement Learning for Wireless Security at the Physical Layer: A Survey,
+					IEEE Transactions on Wireless Communications, 2022.</li>
+					<li>[J3] Barqi Janiar S, Pourahmadi V. Deep-reinforcement learning for fair distributed dynamic spectrum access in priority
+					buffered heterogeneous wireless networks. IET Commun. 2021;19. <a href="https://doi.org/10.1049/cmu2.12098">https://doi.org/10.1049/cmu2.12098</a></li>
+					<li>[C2] S. B. Janiar and V. Pourahmadi, "Deep-Reinforcement Learning for Fair Distributed Dynamic Spectrum Access in Wireless Networks,"
+					2021 IEEE 18th Annual Consumer Communications & Networking Conference (CCNC), 2021, pp. 1-4, doi:
+					10.1109/CCNC49032.2021.9369536.</li>
+					<li>[Essay1] S. B. Janiar, A. Eckford, "The Theory and Applications of Coded Modulation in Digital Communications: A Survey", Dec. 2021, York University.</li>
+				</ul>
+			</div>
+			
+			<div class="cv_section">
+				<h2>Awards and Achievements</h2>
+				<ul style="list-style-type:disc">
+					<li>2023, York University, Nominated for the university's best thesis of the year</li>
+					<li>2016, International Collegiate Programming Contest, ranked 5th.</li>
+					<li>2023, $8000 Scholarship, Research in Deep Reinforcement Learning Based Electric Vehicles Charging Management
+						in Smart Cities domain, York University.</li>
+					<li>2022, $4370 Fellowship Graduate Assistant, York University.</li>
+					<li>2021, $62,500 Scholarship, Master of Applied Science full-fund scholarship, York University.</li>
+					<li>517th / 162,879, The Coordinated Nationwide Test for electrical and computer engineering schools of Iran.</li>
+					<li>7th / 182, Amirkabir University electrical engineering bachelor's degree.</li>
 				</ul>
 			</div>
 		</div>
@@ -89,9 +198,10 @@
         <footer class="footer">
             <p class="footer__title">Siavash Barqi Janiar</p>
             <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+				<ul>
+                <li><a href="https://www.linkedin.com/in/siavashbarqijaniar/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a></li>
+                <li>(647) 897 1497</li>
+				<li>siavashbarqi@gmail.com</li>
             </div>
             <p class="footer__copy">Copyright &#169; Siavash Barqi Janiar, 2023</p>
         </footer>
