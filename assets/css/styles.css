@@ -320,12 +320,13 @@ img {
 
 .home__social {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
+  margin-right: auto;
   font-size: 1.5rem;
   color: var(--second-color);
 }
