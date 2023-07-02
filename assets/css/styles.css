@@ -159,11 +159,35 @@ img {
 	text-align:left;
 	box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
-.cv_section span{color:#74808a;float:right}
-.cv_section h3{font-weight:500;float:left;margin:0;color:#374054}
-.cv_section h4{color:#74808a;clear:both;font-weight:500;margin:0 0 15px 0}
-.cv_section p,.education-block ul{margin:0;color:#74808a;font-size:0.9em}
-.cv_section ul{padding:0 0 0 15px}
+
+.cv_section_header{
+	color: #74808a;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.cv_section_header span{margin:0;color:#74808a;float:right}
+.cv_section_header h3{font-weight:500;float:left;margin:0;color:#374054;}
+.cv_section_header h4{color:#74808a;float:left;clear:both;font-weight:500;margin:0;}
+
+.cv_section_list{
+	padding:5px 150px 5px 25px;
+}
+.cv_section_list ul{list-style-type:circle;}
+//.cv_section p,.education-block ul{margin:10;color:#74808a;font-size:0.9em}
+
+.cv_skill_header{
+	width:200px;
+	padding:0 50px 0 20px;
+	margin:0;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.cv_skill_text{
+	margin:auto auto auto 0;
+	padding-right:20px;
+	//vertical-align: text-bottom;
+}
 
 .body_container{
 	max-width: 800px;
@@ -307,6 +331,9 @@ img {
 		float:center;
 		margin-left:auto;
 		margin-right:auto;
+	}
+	.cv_section_list{
+		padding:5px 100px 5px 25px;
 	}
 }
 .home__title {
