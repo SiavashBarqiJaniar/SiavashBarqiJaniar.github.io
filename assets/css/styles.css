@@ -189,6 +189,43 @@ img {
 	//vertical-align: text-bottom;
 }
 
+.presentation_section{
+	//align-items: center;
+	max-width: 1024px;
+	display: grid;
+	margin-left: auto;//var(--mb-2);
+	margin-right: auto;//var(--mb-2);
+	row-gap: 2rem;
+}
+
+div.presentation_polaroid {
+	//width: 80%;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 25px;
+	margin-right: auto;
+	margin-left: auto;
+	transition: 1s;
+	min-height: 570px;
+	max-width: 1000px;
+}
+
+div.presentation_polaroid:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 1.19);
+}
+
+div.presentation_polaroid_container{
+  text-align: center;
+  padding: 10px 20px;
+}
+
+div.presentation_polaroid iframe{
+	height: 500px;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .body_container{
 	max-width: 800px;
 	text-align: left;
