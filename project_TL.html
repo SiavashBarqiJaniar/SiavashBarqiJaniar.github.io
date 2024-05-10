@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -153,3 +154,160 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Siavash Barqi Janiar: Integrated Feature Extractor Transfer Learning for Wireless Network Security</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="nav__social">
+                    <a class="nav__social-icon" href="https://www.linkedin.com/in/siavashbarqijaniar/"><i class="bx bxl-linkedin"></i></a>
+                    <a class="nav__social-icon" href="https://github.com/SiavashBarqiJaniar"><i class="bx bxl-github"></i></a>
+                    <a class="nav__social-icon" href="mailto:siavashbarqi@gmail.com"><i class="bx bx-envelope"></i></a>
+                    <a class="nav__social-icon" href="https://scholar.google.com/citations?user=KQ82xw4AAAAJ&hl=en"><i class="bx bxl-google"></i></a>
+					<a class="nav__social-icon" href="Siavash_B_Janiar_resume.pdf"><i class='bx bx-file'></i></a>
+                    <!--a class="navButton" href="Siavash_Barqi_Janiar_resume.pdf">Resume</a-->
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html#home" class="nav__link active">About</a></li>
+                        <li class="nav__item"><a href="cv.html" class="nav__link">curriculum vitae</a></li>
+                        <li class="nav__item"><a href="books.html" class="nav__link">Books</a></li>
+                        <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+		<div class="bd-grid" style="margin-top:100px;margin-bottom:5%;">
+			<h2 class="projectHeader">Integrated Feature Extractor Transfer Learning for Wireless Network Security</h2>
+			<h6 class="underHeader">May 30, 2023</h6>
+			<p class="bodyFont"> <!--class="bodyFont"-->
+				This is an interactive article for my paper “Intelligent Anti-jamming based on Deep Reinforcement Learning and Transfer Learning”.
+			</P>
+			<p class="bodyFont">
+				First, let us see how a jammer disrupts user signals in a wireless network.
+				<br>
+				<img src="assets/img/project1/systemModel.png" alt="Wireless Network with a Jamming Attacker" width=75% style="margin:auto auto auto auto;">
+			</p>
+			<p class="bodyFont">
+				In this example, the jammer disrupts the Access Points (APs) in each regional network.
+				This way, users sending signals to the access point in each region will collide with the jammer signal.
+				Usually, the jammer has higher signal power, hence the signal at the receiver (AP) becomes disrupted.
+				This way, the jammer can lower the efficiency and throughput of the communication system.
+			</p>
+			<p class="bodyFont">
+				To confront such a problem, we can equip each access point in each region with a machine learning (reinforcement learning) based agent.
+				The agent can predict the jammer actions and this way, avoid collisions with its signals.
+				So first, we train a deep reinforcement learning model (DRL) that can predict the jammer behaviour and maximize the throughput of the wireless network in a specific region called "source domain".
+				We consider a certain scenario for the source domain and call it "Source". The scenario we used is a <a href="presentations.html#survey_jammer">sweep jammer</a>.
+				For a deep reinforcement learning mechanizm and how it works, kindly refer to my other project, <a href="projectDRL.html">deep reinforcement learning for atari games</a>.
+				The deep neural network (DNN) architecture used for the DRL model is as follows:
+				<img src="assets/img/project1/DNN.png" width=40% alt="Deep Neural Network Architecture" style="margin:auto auto auto auto;">
+				I use "double Q-iteration" DRL algorithm since it avoids "sub-game perfection".
+				The hyperparameters used to tune the DNN for the double Q-iteration algorithm are as follows:
+				<img src="assets/img/project1/params.png" width=75% alt="Simulation Hyperparameters" style="margin:auto auto auto auto;">
+			</p>
+			<p class="bodyFont">
+				As shown, I propose using recurrent neural networks (RNNs) instead of convolutional neural networks (CNNs). Because the wireless network information are all based on time.
+				As a result, the dataset is time series. RNNs are known to perform great when the input space (state space in DRL jargon) is time series.
+				And for the RNN architecture I recommend using one long short-term memory (LSTM) layer as the first hidden layer.
+				I made a comparison between RNN and CNN networks and the results are impressive.
+				<img src="assets/img/project1/RL.png" width=65% alt="RNN vs. CNN" style="margin:auto auto auto auto;">
+				As shown, the RNN is working 15% better than CNN even though the number of parameters used for the RNN network is less than CNN.
+				<img src="assets/img/project1/noParams.png" width=50% alt="Number of Parameters" style="margin:auto auto auto auto;">
+			</p>
+			<!-- TL -->
+			<p class="bodyFont">
+				Now as you can see, both models take a considerable amount of time to be trained. This is not application in applications as fast as wireless network communication systems.
+				So the proposed method in my paper and similar works is to use a ML method named <b>Transfer Learning (TL)</b>.
+				As the name suggests, in transfer learning, we transfer the learned knowledge which usually is in form of a DNN and its weights,
+				to a new environment facing the almost the same problem.
+			</p>
+			<p class="bodyFont">
+				The type of TL I used is named <b>Integrated Feature Extractor (IFE)</b> such that insead of feeding the input to the DNN, feed the extracted features.
+				Each layer of a DNN extracts features but the first layers give general features while the last layers produce the detailed features. In the IFE-TL,
+				the feature extractor part of the DNN is learned in the source domain, and transfered to the target domain. As a result, the layers extracting the features
+				are frozen in the target domain.
+			</p>
+			<!-- TL for anti-jamming -->
+			<p class="bodyFont">
+				To be able to determine how many layers are needed to be frozen in the target domain, we need to estimate how different the two source and
+				target regional wireless networks are from each other. To do so, I used an <b>eXplainable Artificial Intelligence (XAI)</b> method named
+				<b>Feature Relevance Explanation (FRE)</b>. It means we can understand the behaviour of the black-box of DNN by extracting the most important features of it
+				using a more explainable model such as <b>Random Forest</b> models.
+			</p>
+			<!-- Random Forest - XAI -->
+			<p class="bodyFont">
+				To have a good estimation of the two different source and target domains and to avoid any information leakage from the jammer to the users,
+				I first extract the features in the source domain. To do so, we first test the trained DNN to generate data for the random forest model.
+				After transferring the DNN to the target domain, to generate data for the random forest model in the target domain, we test the same DNN tested in the
+				Source. The reason is to measure the differences of the RL agent decisions while following the same policy learned in Source.
+				After having the two extracted imortance of the features, we can calculate the <b>relative entropy (Kullback–Leibler divergence)</b> of the two importance
+				of the features. If the extracted features are not making a probability distribution, we can normalize the values.
+			</p>
+			<!-- FI results -->
+			<p class="bodyFont">
+				I have consider 4 target domain scenarios and design the jammer in a way to be in different differences from the Source.
+				We can see the importance of the differences in these different scenarios as well as the source domain in the figure below:
+				<img src="assets/img/project1/FI.png" width=90% alt="Importance of the Features in Different Scenarios" style="margin:auto auto auto auto;">
+				The following shows the calculated relative entropy values based on the extracted importance of the features.
+				<img src="assets/img/project1/KLs.png" width=40% alt="Relative Entropy Values Calculated for Different Target Regions" style="margin:auto auto auto auto;">
+			</p>
+			<!--  -->
+			<p class="bodyFont">
+				Based on the calculated relative entropy values, we can estimate how many layers are needed to be learnable in the transferred DNN in target regions.
+				To see how the relative entropy values match the optimum number of learnable layers in each target domain, I try freezing different number of layers
+				in each scenario and see how different IFE models work.
+				The following shows the results for all the target scenarios:
+				<img src="assets/img/project1/IFEs.png" width=90% alt="IFE-TL Models Performance for Different Scenarios" style="margin:auto auto auto auto;">
+			</p>
+			<!-- Conclusion -->
+			<h2>Conclusion</h2>
+			<p class="bodyFont">
+				To be able to speed up the training process of machine learning models, especially in RL algorithms, we can take
+				advantage of TL in problems that source and target domains have considerable similar features. In an jamming
+				problem in wireless networks, I showed how we can implement RL models and decrease their complexity by IFE-TL in this article.
+			</p>
+		</div>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Siavash Barqi Janiar</p>
+            <div class="footer__social">
+				<ul>
+                <li><a href="https://www.linkedin.com/in/siavashbarqijaniar/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a></li>
+                <li>(647) 897 1497</li>
+				<li>siavashbarqi@gmail.com</li>
+            </div>
+            <p class="footer__copy">Copyright &#169; Siavash Barqi Janiar, 2023</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+>>>>>>> d736dc6 (updated cv)

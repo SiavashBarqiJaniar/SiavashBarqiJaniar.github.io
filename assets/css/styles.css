@@ -218,7 +218,10 @@ div.presentation_polaroid:hover{
 div.presentation_polaroid_container{
   text-align: center;
   padding: 10px 20px;
+<<<<<<< HEAD
   
+=======
+>>>>>>> d736dc6 (updated cv)
 }
 
 div.presentation_polaroid iframe{
@@ -551,6 +554,18 @@ div.presentation_polaroid iframe{
 	row-gap: 2rem;
 }
 
+<<<<<<< HEAD
+=======
+.book_container{
+	max-width: 1024px;
+	display: grid;
+	margin-left: auto;//var(--mb-2);
+	margin-right: auto;//var(--mb-2);
+	row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+>>>>>>> d736dc6 (updated cv)
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: .5rem;
