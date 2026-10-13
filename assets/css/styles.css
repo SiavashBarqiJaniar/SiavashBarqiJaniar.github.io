@@ -114,7 +114,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background: rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.345);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   /* background-color: linear-gradient(90deg, #001c99 0%, #5d00a1 100%); */
