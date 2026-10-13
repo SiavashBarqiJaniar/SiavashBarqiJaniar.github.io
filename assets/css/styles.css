@@ -49,7 +49,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  background-color: #1467e288;
+  background: linear-gradient(135deg, #002efc85 0%, #8100d681 100%);
 }
 
 h1, h2, p {
