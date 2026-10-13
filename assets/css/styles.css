@@ -50,6 +50,7 @@ body {
   font-size: var(--normal-font-size);
   color: var(--second-color);
   background: linear-gradient(135deg, #002efc85 0%, #8100d681 100%);
+  background-attachment: fixed;
 }
 
 h1, h2, p {
