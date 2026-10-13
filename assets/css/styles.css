@@ -294,7 +294,7 @@ div.presentation_polaroid iframe{
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 2rem;
-  color: var(--second-color);
+  color: #cccccc;
 }
 
 .nav__social-icon:hover {
