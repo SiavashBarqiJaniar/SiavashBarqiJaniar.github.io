@@ -83,7 +83,7 @@ img {
 
 .section-title::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 64px;
   height: 0.18rem;
   left: 0;
@@ -119,7 +119,7 @@ img {
 .bodyFont {
   font-size: 120%;
   line-height: 24pt;
-  font-family: 'Grotesk', sans-serif;
+  font-family: "Grotesk", sans-serif;
   text-align: left;
   margin-top:2%;
 }
@@ -127,7 +127,7 @@ img {
 .projectHeader{
 	position:relative;
 	display:inline-block;
-	font-family: 'Grotesk', sans-serif;
+	font-family: "Grotesk", sans-serif;
 	font-size:3em;
 	text-align: left;
 	font-weight:bold;
@@ -146,7 +146,7 @@ img {
 
 .underHeader{
 	font-size: 10pt;
-	font-family: 'Grotesk', sans-serif;
+	font-family: "Grotesk", sans-serif;
 	text-align: left;
 	margin-top: 1%;
 }
@@ -157,7 +157,7 @@ img {
 	padding:15px;
 	border:1px solid #dcd9d9;
 	text-align:left;
-	box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+	box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 }
 
 .cv_section_header{
@@ -173,7 +173,6 @@ img {
 	padding:5px 150px 5px 25px;
 }
 .cv_section_list ul{list-style-type:circle;}
-//.cv_section p,.education-block ul{margin:10;color:#74808a;font-size:0.9em}
 
 .cv_skill_header{
 	width:200px;
@@ -186,15 +185,13 @@ img {
 .cv_skill_text{
 	margin:auto auto auto 0;
 	padding-right:20px;
-	//vertical-align: text-bottom;
 }
 
 .presentation_section{
-	//align-items: center;
 	max-width: 1024px;
 	display: grid;
-	margin-left: auto;//var(--mb-2);
-	margin-right: auto;//var(--mb-2);
+	margin-left: auto;
+	margin-right: auto;
 	row-gap: 2rem;
 }
 
@@ -205,27 +202,22 @@ div.presentation_polaroid {
 	margin-right: auto;
 	margin-left: auto;
 	transition: 1s;
-	//min-height: 570px;
 	max-width: 1000px;
 	width: 100%;
 	height: 650px;
 }
 
 div.presentation_polaroid:hover{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 1.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
 }
 
 div.presentation_polaroid_container{
   text-align: center;
   padding: 10px 20px;
-<<<<<<< HEAD
   
-=======
->>>>>>> d736dc6 (updated cv)
 }
 
 div.presentation_polaroid iframe{
-	//min-height: 570px;
 	height: 90%;
 	width: 100%;
 	margin: 0;
@@ -235,9 +227,6 @@ div.presentation_polaroid iframe{
 	max-width: 800px;
 	text-align: left;
 	margin: 100px auto 50px auto;
-    //display: grid;
-  //margin-left: var(--mb-2);
-  //margin-right: var(--mb-2);
 }
 
 /*===== NAV =====*/
@@ -271,13 +260,10 @@ div.presentation_polaroid iframe{
   color: #fff;
 }
 
-.nav__link:hover {
-  position: relative;
-}
 
 .nav__link:hover::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 0.18rem;
   left: 0;
@@ -297,14 +283,11 @@ div.presentation_polaroid iframe{
 
 .nav__social {
 	flex-direction: column;
-    //display: flex;
-	//margin-top: 1.5rem;
 }
 
 .nav__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
-  //margin-right: 5px;
   font-size: 2rem;
   color: var(--second-color);
 }
@@ -316,7 +299,7 @@ div.presentation_polaroid iframe{
 /*Active menu*/
 .active::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 0.18rem;
   left: 0;
@@ -350,27 +333,23 @@ div.presentation_polaroid iframe{
 }
 @media screen and (max-width: 767px){
 	.home {
-	  position: relative;
-	  row-gap: 1rem;
-	  padding: 0 0 0 0;
+	  padding: 0;
 	}
 	.homeContainer{
 		display:block;
 	}
 	.aboutText{
 		width:100%;
-		margin-left: 0%;
+		margin-left: 0;
 		margin-top: 5%;
 	}
 	.home__img {
-		float: center;
 	}
 	.home__social {
 	  display: none;
 	}
 	.work__container{
 		display:none;
-		float:center;
 		margin-left:auto;
 		margin-right:auto;
 	}
@@ -416,8 +395,6 @@ div.presentation_polaroid iframe{
   bottom: 0;
   margin-top: 0;
   margin-bottom:auto;
-  //width: 260px;
-  //height:500px;
 }
 
 .home__blob {
@@ -440,14 +417,13 @@ div.presentation_polaroid iframe{
 }
 
 .button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
 
 .navButton {
   background-color: var(--first-color);
   color: #fff;
   padding: .5rem 1.25rem;
-  top:0;
   border-radius: 1.5rem;
   margin-bottom: 150%;
 }
@@ -480,7 +456,7 @@ div.presentation_polaroid iframe{
 .skills__container {
   row-gap: 2rem;
   text-align: center;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 .skills__subtitle {
@@ -500,7 +476,7 @@ div.presentation_polaroid iframe{
   padding: .5rem 1rem;
   margin: 0 2px 0 2px;
   border-radius: .5rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 }
 
 .skills__icon {
@@ -546,28 +522,24 @@ div.presentation_polaroid iframe{
 
 /* ===== Projects =====*/
 .work__container {
-	//align-items: center;
 	max-width: 1024px;
 	display: grid;
-	margin-left: auto;//var(--mb-2);
-	margin-right: auto;//var(--mb-2);
+	margin-left: auto;
+	margin-right: auto;
 	row-gap: 2rem;
 }
 
-<<<<<<< HEAD
-=======
 .book_container{
 	max-width: 1024px;
 	display: grid;
-	margin-left: auto;//var(--mb-2);
-	margin-right: auto;//var(--mb-2);
+	margin-left: auto;
+	margin-right: auto;
 	row-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
 }
 
->>>>>>> d736dc6 (updated cv)
 .work__img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -581,7 +553,6 @@ div.presentation_polaroid iframe{
 }
 
 div.polaroid {
-	//width: 80%;
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin-bottom: 25px;
@@ -608,7 +579,7 @@ div.polaroid_container{
 }
 
 .projects_section{
-	box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+	box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 	border-radius: .5rem;
 	overflow: hidden;
 	transition: 1s;
@@ -625,12 +596,10 @@ div.polaroid_container{
 }
 
 .projects_section h5{
-	top:300px;
 	height:auto;
 }
 
 .projects_section p{
-	top:400px;
 	padding: 15px;
 	height:auto;
 }
@@ -693,9 +662,6 @@ div.polaroid_container{
   .home {
     padding: 10rem 0 2rem;
   }
-  //.home__img {
-  //  width: 450px;
-  //}
 }
 
 @media screen and (min-width: 768px) {
@@ -733,10 +699,6 @@ div.polaroid_container{
   .home {
     padding: 8rem 0 2rem;
   }
-  //.home__img {
-  //  width: 400px;
-  //  bottom: 10%;
-  //}
   .about__container {
     padding-top: 2rem;
   }
@@ -769,10 +731,6 @@ div.polaroid_container{
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
-  //.home__img {
-    //width: 300px;
-    //bottom: 25%;
-  //}
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -801,8 +759,5 @@ div.polaroid_container{
   .home {
     row-gap: 2rem;
   }
-  //.home__img {
-  //  width: 200px;
-  //}
 }
 
