@@ -699,7 +699,7 @@ div.polaroid_container{
     display: none;
   }
   .nav__link {
-    color: var(--second-color);
+    color: #969696;
   }
   .home {
     padding: 8rem 0 2rem;
