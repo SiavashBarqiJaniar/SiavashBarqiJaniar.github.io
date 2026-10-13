@@ -262,7 +262,7 @@ div.presentation_polaroid iframe{
 
 .nav__link {
   position: relative;
-  color: #969696;
+  color: #cccccc;
 }
 
 
@@ -277,11 +277,11 @@ div.presentation_polaroid iframe{
 }
 
 .nav__logo {
-  color: #969696;
+  color: #cccccc;
 }
 
 .nav__toggle {
-  color: #969696;
+  color: #cccccc;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -699,7 +699,7 @@ div.polaroid_container{
     display: none;
   }
   .nav__link {
-    color: #969696;
+    color: #cccccc;
   }
   .home {
     padding: 8rem 0 2rem;
